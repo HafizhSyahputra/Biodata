@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity2">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:textColor="@color/hint_color"
+        android:text="Biodata"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:textColor="@color/hint_color"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+    <TextView
+        android:id="@+id/textViewNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Alamat : "
+        android:textColor="@color/hint_color"
+        android:textSize="15sp"
+        android:fontFamily="@font/poppinsregular" />
+    <TextView
+        android:id="@+id/textViewAlamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kota : "
+        android:layout_marginTop="15dp"
+        android:textSize="15sp"
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular" />
+    <TextView
+        android:id="@+id/textViewKota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsregular" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Jenis Kelamin : "
+        android:textSize="15sp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular" />
+    <TextView
+        android:id="@+id/textViewJK"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="18sp"
+        android:fontFamily="@font/poppinsregular" />
+
+</LinearLayout>

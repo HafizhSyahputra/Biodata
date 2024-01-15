@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/poppinsregular"
+        android:text="Biodata"
+        android:textAlignment="center"
+        android:textSize="35dp" />
+
+    <TextView
+        android:id="@+id/TVnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nama : "
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <EditText
+        android:id="@+id/ETnama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/TValamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Alamat : "
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+        <EditText
+        android:id="@+id/ETalamat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp" />
+
+    <TextView
+        android:id="@+id/TVkota"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Kota : "
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <Spinner
+        android:id="@+id/listItem"
+        android:layout_width="380dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="25dp"
+        android:entries="@array/kota"
+        android:elevation="1dp"
+        android:background="@drawable/edittext_background"
+        android:layout_marginTop="10dp"
+        android:padding="15dp"
+        android:fontFamily="@font/poppinsregular"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"></Spinner>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:id="@+id/pilih_jk">
+        <RadioButton
+            android:id="@+id/laki"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Laki-Laki" />
+        <RadioButton
+            android:id="@+id/perempuan"
+            android:layout_marginStart="120dp"
+            android:layout_marginTop="-49dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perempuan" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/submitButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppinsregular"
+        android:elevation="3dp"
+        android:backgroundTint="@color/black"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="25dp"
+        android:text="Submit" />
+
+</LinearLayout>
