@@ -1,4 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -6,6 +15,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
+
+
 
     <TextView
         android:layout_width="match_parent"
@@ -17,13 +28,39 @@
         android:textSize="35dp" />
 
     <TextView
+        android:id="@+id/TVnis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NIS : "
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <EditText
+        android:id="@+id/ETnis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp" />
+
+    <TextView
         android:id="@+id/TVnama"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Nama : "
         android:textColor="@color/hint_color"
         android:fontFamily="@font/poppinsregular"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:layout_marginLeft="25dp"
         android:layout_marginRight="25dp"/>
 
@@ -81,7 +118,7 @@
 
     <Spinner
         android:id="@+id/listItem"
-        android:layout_width="380dp"
+        android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="25dp"
         android:entries="@array/kota"
@@ -116,6 +153,32 @@
             android:text="Perempuan" />
     </RadioGroup>
 
+    <TextView
+        android:id="@+id/TVUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Umur : "
+        android:textColor="@color/hint_color"
+        android:fontFamily="@font/poppinsregular"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"/>
+
+    <EditText
+        android:id="@+id/ETUmur"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="25dp"
+        android:background="@drawable/edittext_background"
+        android:elevation="1dp"
+        android:padding="12dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/hint_color"
+        app:strokeColor="#8F8F8F"
+        app:strokeWidth="1dp" />
+
     <Button
         android:id="@+id/submitButton"
         android:layout_width="match_parent"
@@ -128,4 +191,6 @@
         android:layout_marginRight="25dp"
         android:text="Submit" />
 
+
 </LinearLayout>
+    </ScrollView>
